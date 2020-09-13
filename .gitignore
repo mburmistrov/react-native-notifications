@@ -193,4 +193,5 @@ package-lock.json
 .history
 
 # Typescript build
-lib/dist/
+# lib/dist/ to be committed for module to work from fork
+# lib/dist/
