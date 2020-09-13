@@ -12,7 +12,7 @@
     RNNotificationEventHandler* _notificationEventHandler;
     RNNotificationsStore* _store;
     RNPushKitEventHandler* _pushKitEventHandler;
-    RNEventEmitter* _eventEmitter;
+    RNWixNotificationsEventEmitter* _eventEmitter;
     RNNotificationCenterMulticast* _notificationCenterMulticast;
 }
 

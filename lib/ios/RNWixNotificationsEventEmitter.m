@@ -1,6 +1,6 @@
-#import "RNEventEmitter.h"
+#import "RNWixNotificationsEventEmitter.h"
 
-@implementation RNEventEmitter
+@implementation RNWixNotificationsEventEmitter
 
 RCT_EXPORT_MODULE();
 
