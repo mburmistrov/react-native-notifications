@@ -1,7 +1,7 @@
 export declare class NotificationCategory {
     identifier: string;
-    actions: [NotificationAction?];
-    constructor(identifier: string, actions: [NotificationAction?]);
+    actions?: NotificationAction[];
+    constructor(identifier: string, actions?: NotificationAction[]);
 }
 export interface NotificationTextInput {
     buttonTitle: string;
@@ -9,9 +9,9 @@ export interface NotificationTextInput {
 }
 export declare class NotificationAction {
     identifier: string;
-    activationMode: 'foreground' | 'authenticationRequired' | 'destructive';
+    activationMode: 'background' | 'foreground' | 'authenticationRequired' | 'destructive';
     title: string;
     authenticationRequired: boolean;
-    textInput: NotificationTextInput;
-    constructor(identifier: string, activationMode: 'foreground' | 'authenticationRequired' | 'destructive', title: string, authenticationRequired: boolean, textInput: NotificationTextInput);
+    textInput?: NotificationTextInput;
+    constructor(identifier: string, activationMode: 'foreground' | 'authenticationRequired' | 'destructive', title: string, authenticationRequired: boolean, textInput?: NotificationTextInput);
 }
